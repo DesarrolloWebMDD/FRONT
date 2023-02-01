@@ -1,0 +1,55 @@
+<button mat-icon-button class="close-button" [mat-dialog-close]="true">
+  <mat-icon class="close-icon" color="warn">close</mat-icon>
+</button>
+<div mat-dialog-title>
+  <p class="current_title my-1">Carga de partidos</p>
+</div>
+<form [formGroup]="form" autocomplete="off" (ngSubmit)="form.valid ? send() : ''">
+  <mat-dialog-content class="mat-typography">
+
+    <div class="col-md-12">
+      <label for="" class="current_SubTitle">Liga</label>
+      <mat-form-field class="w-100">
+        <mat-select formControlName="ligueId" #ligue required>
+          <mat-option *ngFor="let item of lstLigues" [value]="item.id">
+            {{item.name}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.controls.ligueId.untouched || !form.controls.ligueId.value">
+          Seleccione Liga *.
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="container" appDnd (fileDropped)="onFileDropped($event)">
+      <input type="file" #fileDropRef id="fileDropRef" multiple (change)="fileBrowseHandler($event)" accept=".xlsx"/>
+      <span>
+        <mat-icon class="add-icon">add_circle_outline</mat-icon>
+         {{files.length < 1 ? 'Seleccione el archivo a cargar' : 'Excel cargado'}} 
+      </span>
+    </div>
+    <div class="files-list">
+      <div class="single-file" *ngFor="let file of files; let i = index">
+          <div class="info">
+              <div class="name d-flex">
+                  <mat-icon svgIcon="picture-icon"></mat-icon>
+                  <p class="mb-0 ms-2">{{ file.name }}</p>
+              </div>
+              <div class="action">
+                  <app-progress class="file-progress"  [ngClass]="file.progress == 100 ? 'hide-progress': 'show-progress'"></app-progress>
+                  <mat-icon [ngClass]="file.progress == 100 ? 'icon-complete' : 'icon-not-complete'" (click)="deleteFile(i)">close</mat-icon>
+                  <mat-icon class="check" [ngClass]="file.progress == 100 ? 'icon-complete' : 'icon-not-complete'">check</mat-icon>
+              </div>
+          </div>
+      </div>
+  </div>
+      
+  
+
+    <br>
+    <div class="d-grid ">
+      <button class="btn btn-success rounded-pill btn-lg mb-4" type="submit">Aceptar</button>
+    </div>
+
+  </mat-dialog-content>
+</form>

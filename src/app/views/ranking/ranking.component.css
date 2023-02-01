@@ -1,0 +1,243 @@
+/**
+.demo-table {
+    width: 100%;
+  }
+  
+  .mat-column-demo-position {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+  }
+  
+  .mat-column-demo-name {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+  
+  .mat-column-demo-weight {
+    font-style: italic;
+  }
+  
+  .mat-column-demo-symbol {
+    width: 32px;
+    font-weight: bold;
+  }
+  .textTable{
+      text-align: initial !important;
+  }**/
+/* listado usuarios */
+
+.box-usuarios .table td,
+.box-usuarios .table th {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.box-usuarios .table th {
+    position: relative;
+    border-top: 0;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 90%;
+}
+
+.box-usuarios .table th i {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    margin-left: 5px; */
+}
+
+.box-usuarios .table th:nth-child(5) i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.box-usuarios .table img {
+    max-width: initial;
+    width: 35px;
+    height: 35px;
+}
+
+.box-usuarios .table .aside img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.table-users {
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+    margin-bottom: 0;
+}
+
+.table-users .btn {
+    font-size: 0.9rem;
+}
+
+.table-users .td {
+    background-color: #ffd100;
+}
+
+.table-users td {
+    border-top: 1px solid #e2e6ea;
+    border-bottom: 1px solid #e2e6ea;
+    font-size: 0.9rem;
+}
+
+.table-users thead th {
+    border: 0;
+    padding: 0.5rem .75rem;
+}
+
+.table-users table td {
+    border: 0;
+    padding: 0 .5rem !important;
+}
+
+.table-users table td:first-child {
+    padding-left: 0 !important;
+}
+
+.table-users table td:last-child {
+    padding-right: 0 !important;
+}
+
+.table-users .td a {
+    padding: 0 8px;
+    display: block;
+}
+
+.table-users .td a.btn {
+    padding: 0 !important;
+}
+
+.table-users.version-2 {
+    font-size: 90%;
+}
+
+.table-users.version-2 .td,
+.table-users.version-2 td {
+    background-color: #f3f3f4;
+    border: 0;
+}
+
+.table-users.version-2 .td a {
+    position: relative;
+    background: #ffd100;
+    padding: 8px;
+    font-size: 120%;
+}
+
+.table-users.version-2 .td a:before {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    border: 0;
+    background: #ffd100;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+.table-users.version-2 td,
+.table-users.version-2 th {
+    vertical-align: middle;
+    padding: 0.2rem 0.5rem;
+}
+
+.table-users.version-2 img {
+    width: 30px;
+}
+
+.table-users.version-2 .btn {
+    border-radius: 0;
+    padding: 8px;
+    font-size: 90%;
+}
+
+
+/* listado bonos */
+
+.box-bonos .bloque .imagen {
+    border-radius: 15px;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+}
+
+.box-bonos .bloque .text {
+    padding: 15px 15px 0;
+}
+
+.box-bonos .bloque .button {
+    padding: 15px 0;
+}
+
+.box-bonos .bloque .text h3 {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    min-height: 50px;
+}
+
+.box-bonos .bloque .text p {
+    min-height: 60px;
+}
+
+.box-bonos .row {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.box-bonos .row .bloque {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.star {
+    position: relative;
+    color: #ffd100;
+}
+
+.valoracion {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.valoracion b {
+    margin-left: 5px;
+}
+
+.star .porcentaje {
+    display: block;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.bono-box {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.rounded-circle{
+    width: 45px;
+    height: 45px;
+    
+}
+

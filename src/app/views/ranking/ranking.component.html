@@ -1,0 +1,571 @@
+<div class="container">
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="RANKING SEMANAL">
+            <!--
+              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+               
+                <ng-container matColumnDef="demo-position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+              
+               
+                <ng-container matColumnDef="demo-name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element" class="textTable"> {{element.name}} </td>
+                </ng-container>
+              
+               
+                <ng-container matColumnDef="demo-weight">
+                  <th mat-header-cell *matHeaderCellDef> Weight </th>
+                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+              
+               
+                <ng-container matColumnDef="demo-symbol">
+                  <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>-->
+
+            <table class="table table-users">
+                <thead>
+                    <tr>
+                        <th scope="col" width="1%">N°</th>
+                        <th scope="col" width="10%" style="padding-left: 1rem;text-align: center">
+                            Usuarios
+                        </th>
+                        <th scope="col" width="10%" class="text-center">
+                            Puntos
+                            <a href="http://dondeapuesto.com/usuarios/date/week/filtrar/puntos/asc">
+                                <i class="fas fa-filter"></i>
+                            </a>
+
+                        </th>
+
+                        <th scope="col" width="10%" class="text-center">
+                            Aciertos/<br>Pronósticos
+                            <a href="http://dondeapuesto.com/usuarios/date/week/filtrar/pronosticos/asc">
+                                <i class="fas fa-filter"></i>
+                            </a>
+                        </th>
+                        <th scope="col" width="10%" class="text-center">
+                            Efectividad
+                            <a href="http://dondeapuesto.com/usuarios/date/week/filtrar/efectividad/asc">
+                                <i class="fas fa-filter"></i>
+                            </a>
+                        </th>
+                     
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/Ivan" class="btn">
+                                <b> 1</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/Ivan">
+                                                <img src="http://dondeapuesto.com/uploads/no-disponible.jpg" alt="Iván"
+                                                    class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/Ivan">
+                                                <b>Ivan</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/Ivan">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/Ivan" class="btn btn-warning btn-block"> 45,920
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 50
+                                /
+                                <b> 120
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 41.67
+                                %
+                            </b>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/Tachira" class="btn">
+                                <b> 2</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/Tachira">
+                                                <img src="https://dondeapuesto.com/uploads/users/554.jpg" alt="SAMUEL"
+                                                    class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/Tachira">
+                                                <b>Tachira</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/Tachira">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/Tachira" class="btn btn-warning btn-block"> 45,440
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 55
+                                /
+                                <b> 128
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 42.97
+                                %
+                            </b>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/Futbol365" class="btn">
+                                <b> 3</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/Futbol365">
+                                                <img src="https://dondeapuesto.com/uploads/users/3.jpg" alt="Fernando"
+                                                    class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/Futbol365">
+                                                <b>Futbol365</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/Futbol365">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/Futbol365" class="btn btn-warning btn-block">
+                                37,910
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 67
+                                /
+                                <b> 152
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 44.08
+                                %
+                            </b>
+                        </td>
+                        
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/Joshua" class="btn">
+                                <b> 4</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/Joshua">
+                                                <img src="https://dondeapuesto.com/uploads/users/519.jpg"
+                                                    alt="Josue Paul" class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/Joshua">
+                                                <b>Joshua</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/Joshua">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/Joshua" class="btn btn-warning btn-block"> 22,120
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 29
+                                /
+                                <b> 56
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 51.79
+                                %
+                            </b>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/miguel0301" class="btn">
+                                <b> 5</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/miguel0301">
+                                                <img src="https://lh3.googleusercontent.com/a-/AOh14Gi3_8IUD3x-aHxAU1M0PMytrMNHFLZkiQ_OL42MBQ=s96-c"
+                                                    alt="Miguel Ángel" class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/miguel0301">
+                                                <b>miguel0301</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/miguel0301">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/miguel0301" class="btn btn-warning btn-block">
+                                17,130
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 26
+                                /
+                                <b> 47
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 55.32
+                                %
+                            </b>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/Liz31" class="btn">
+                                <b> 6</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/Liz31">
+                                                <img src="https://dondeapuesto.com/uploads/users/1101.jpg"
+                                                    alt="Liz Verónica" class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/Liz31">
+                                                <b>Liz31</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/Liz31">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/Liz31" class="btn btn-warning btn-block"> 14,030
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 14
+                                /
+                                <b> 27
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 51.85
+                                %
+                            </b>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/MiguelGaloc" class="btn">
+                                <b> 7</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/MiguelGaloc">
+                                                <img src="http://dondeapuesto.com/uploads/no-disponible.jpg"
+                                                    alt="MiguelGaloc" class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/MiguelGaloc">
+                                                <b>MiguelGaloc</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/MiguelGaloc">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/MiguelGaloc" class="btn btn-warning btn-block">
+                                10,910
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 16
+                                /
+                                <b> 31
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 51.61
+                                %
+                            </b>
+                        </td>
+                     
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/Beninite" class="btn">
+                                <b> 8</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/Beninite">
+                                                <img src="https://graph.facebook.com/v8.0/4353578964701994/picture?width=150&amp;height=150"
+                                                    alt="Carlos Adrian Abel" class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/Beninite">
+                                                <b>Beninite</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/Beninite">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/Beninite" class="btn btn-warning btn-block"> 9,910
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 11
+                                /
+                                <b> 20
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 55.00
+                                %
+                            </b>
+                        </td>
+                     
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/ManiakoAlone" class="btn">
+                                <b> 9</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/ManiakoAlone">
+                                                <img src="http://dondeapuesto.com/uploads/no-disponible.jpg"
+                                                    alt="ManiakoAlone" class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/ManiakoAlone">
+                                                <b>ManiakoAlone</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/ManiakoAlone">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/ManiakoAlone" class="btn btn-warning btn-block">
+                                9,730
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 18
+                                /
+                                <b> 39
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 46.15
+                                %
+                            </b>
+                        </td>
+                      
+                    </tr>
+
+                    <tr class="tr ">
+                        <td scope="row" class="td" valign="middle" align="center">
+                            <a href="http://dondeapuesto.com/usuarios/mejia" class="btn">
+                                <b> 10</b>
+                            </a>
+                        </td>
+                        <td style="padding-left: 1rem;">
+                            <table cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="http://dondeapuesto.com/usuarios/mejia">
+                                                <img src="https://dondeapuesto.com/uploads/users/5.png" alt="Mejia"
+                                                    class="rounded-circle">
+                                            </a>
+                                        </td>
+                                        <td valign="middle">
+                                            <a href="http://dondeapuesto.com/usuarios/mejia">
+                                                <b>mejia</b>
+                                            </a>
+                                        </td>
+                                        <td valign="middle" style="padding-left: 0 !important;">
+                                            <a href="http://dondeapuesto.com/usuarios/mejia">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td align="left">
+                            <a href="http://dondeapuesto.com/usuarios/mejia" class="btn btn-warning btn-block"> 9,570
+                            </a>
+                        </td>
+
+                        <td align="center">
+                            <span> 11
+                                /
+                                <b> 24
+                                </b>
+                            </span>
+                        </td>
+                        <td align="center">
+                            <b style="color: green;"> 45.83
+                                %
+                            </b>
+                        </td>
+                     
+                    </tr>
+                </tbody>
+            </table>
+        </mat-tab>
+        <mat-tab label="RANKING MENSUAL">Content 2</mat-tab>
+
+    </mat-tab-group>
+</div>
+
+
+<div class="row">
+  <div class="col-12">
+    <app-donut-user [dataEfectividad]="dataEfectividad"></app-donut-user>
+  </div>
+</div>

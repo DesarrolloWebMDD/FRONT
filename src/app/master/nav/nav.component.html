@@ -1,0 +1,44 @@
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" style="">
+    <div class="container px-5">
+        <a class="navbar-brand fw-bold" href="#page-top">DONATO.BET</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+            Menu
+            <i class="bi-list"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item"><a class="nav-link me-lg-3" href="/">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="/apuestas">PARTIDOS</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="/premios">PREMIOS</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="/ranking">RANKING</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#download">NOVEDADES</a></li>
+            </ul>
+            <button class="btn btn-warning rounded-pill px-3 mb-2 mb-lg-0" (click)="goRegister()" *ngIf="!isUser">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                    <span class="small">Registrarme</span>
+                </span>
+            </button>
+            &nbsp;
+            <button class="btn btn-success rounded-pill px-3 mb-2 mb-lg-0" (click)="goLogin()" *ngIf="!isUser">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                    <span class="small">Acceder</span>
+                </span>
+            </button>
+            <button class="btn btn-success rounded-pill px-3 mb-2 mb-lg-0" (click)="goExportFile()" *ngIf="isUser">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                    <span class="small">Importar Execel</span>
+                </span>
+            </button>
+            <button class="btn btn-success rounded-pill px-3 mb-2 mb-lg-0" (click)="sendOut()" *ngIf="isUser">
+                <span class="d-flex align-items-center">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                    <span class="small">Salir</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</nav>

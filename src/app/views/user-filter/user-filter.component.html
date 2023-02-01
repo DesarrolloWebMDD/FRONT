@@ -1,0 +1,23 @@
+
+  <mat-accordion class="example-headers-align">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+           perfil
+        </mat-panel-title>
+        <mat-panel-description title="Codigo usuario">
+            {{dataUser.referenceCode}}
+          <mat-icon [title]="dataUser.userName">account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-list>
+        <mat-list-item> Actualizar datos:   <mat-icon>autorenew</mat-icon></mat-list-item>
+        <hr>
+        <mat-list-item> <strong>Saldo : </strong> {{userPoint?.membershipPoint}}  </mat-list-item>
+        <mat-list-item> <strong>Acumulados : </strong> {{userPoint?.accumulatedPoints}} </mat-list-item>
+       </mat-list>
+  
+    </mat-expansion-panel>
+  
+  </mat-accordion>
