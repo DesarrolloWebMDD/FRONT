@@ -4,8 +4,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AccionRequest } from 'src/app/models/sportUpload.model';
-import { LigueService } from 'src/app/services/ligue.service';
-import { SportsService } from 'src/app/services/sports.service';
+
 import Swal from 'sweetalert2';
 
 @Component({
@@ -23,9 +22,7 @@ export class CargaExcelComponent implements OnInit {
   array: any;
   constructor(private matIconRegistry: MatIconRegistry,
     private fb: FormBuilder, public dialogRef: MatDialogRef<any>,
-    private ligueService : LigueService,
-    private domSanitizer: DomSanitizer,
-    private sportsService:SportsService) { }
+    private domSanitizer: DomSanitizer) { }
   form = new FormGroup({
     ligueId: new FormControl()
   });
@@ -38,7 +35,6 @@ export class CargaExcelComponent implements OnInit {
     );
 
     this.buildForm();
-    this.loadLigues();
   }
   
   buildForm() {
@@ -47,13 +43,7 @@ export class CargaExcelComponent implements OnInit {
     });
   }
 
-  loadLigues(){
-    this.ligueService.listLigues().subscribe(response => {
-      if(response.valid === true){
-        this.lstLigues = response.data;
-     }
-    });
-  }
+ 
 
   get ligue(): boolean {
     return this.form.get('ligueId')?.invalid as boolean && this.form.get('ligueId')?.touched as boolean;
@@ -134,17 +124,6 @@ export class CargaExcelComponent implements OnInit {
       data.ligueId = formData.ligueId;
       data.fileName=this.nombreArchivo;
       console.log(data)
-      this.sportsService.GuardarExcel(data).subscribe(response => {
-        console.log(response)
-        if(response.isValid === true){
-          Swal.fire('','Datos cargados con exito ...!','success').then(() => {
-            this.dialogRef.close(response);
-          });
-        }
-        else{
-          console.log(response)
-        }
-      })
      }
     //this.dialogRef.close(this.form.value);
   }
