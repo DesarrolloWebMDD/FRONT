@@ -4,13 +4,13 @@
 <div mat-dialog-title>
     <p class="current_title my-1">INICIO SESIÓN</p>
 </div>
-<form [formGroup]="form" autocomplete="off" (ngSubmit)="form.valid ? send() : ''">
+<form [formGroup]="form" autocomplete="off" (ngSubmit)="form.valid ? send() : ''" autocomplete="new-username">
     <mat-dialog-content class="mat-typography">
                
             <div class="col-md-12">
                 <label for="name" class="current_SubTitle">Email</label>
                 <mat-form-field class="w-100">
-                    <input matInput formControlName="username" required />
+                    <input matInput formControlName="new-username" required autocomplete="off"/>
                     <mat-error *ngIf="username.invalid">
                         Usuario requerido.
                     </mat-error>
@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <label for="name" class="current_SubTitle">Password</label>
                 <mat-form-field class="w-100">
-                    <input matInput formControlName="password" type="password" required />
+                    <input matInput formControlName="password" type="password" required autocomplete="false"/>
                     <mat-error *ngIf="password.invalid">
                         Password requerido.
                     </mat-error>

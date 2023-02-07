@@ -14,14 +14,14 @@
                 <li class="nav-item"><a class="nav-link me-lg-3" href="/ranking">RANKING</a></li>
                 <li class="nav-item"><a class="nav-link me-lg-3" href="#download">NOVEDADES</a></li>
             </ul>
-            <button class="btn btn-warning rounded-pill px-3 mb-2 mb-lg-0" (click)="goRegister()" *ngIf="!isUser">
+            <button class="btn btn-info rounded-pill px-3 mb-2 mb-lg-0" (click)="goRegister()">
                 <span class="d-flex align-items-center">
                     <i class="bi bi-box-arrow-in-right me-2"></i>
                     <span class="small">Registrarme</span>
                 </span>
             </button>
             &nbsp;
-            <button class="btn btn-success rounded-pill px-3 mb-2 mb-lg-0" (click)="goLogin()" *ngIf="!isUser">
+            <button class="btn btn-process-save rounded-pill px-3 mb-2 mb-lg-0" (click)="goLogin()">
                 <span class="d-flex align-items-center">
                     <i class="bi bi-box-arrow-in-right me-2"></i>
                     <span class="small">Acceder</span>

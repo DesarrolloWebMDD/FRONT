@@ -3145,8 +3145,8 @@ textarea.form-control-lg {
 }
 .btn-info:disabled, .btn-info.disabled {
   color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  background-color: #1ab4f7;
+  border-color: #1ab4f7;
 }
 
 .btn-warning {
@@ -3158,6 +3158,11 @@ textarea.form-control-lg {
   color: #000;
   background-color: #ffca2c;
   border-color: #ffc720;
+}
+.btn-process-save {
+  color: #000;
+  background-color: #0063AE;
+  border-color: #0063AE;
 }
 .btn-check:focus + .btn-warning, .btn-warning:focus {
   color: #000;
@@ -11319,7 +11324,7 @@ section {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #ed600e;
+  background-color: #dee3ea;
   z-index: 1000;
 }
 #mainNav .navbar-brand {
@@ -11335,6 +11340,8 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #212529;
+  font-family: system-ui;
+  font-size: 13px;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #6c757d;

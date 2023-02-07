@@ -16,6 +16,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ErrorStateMatcher, MAT_DATE_LOCALE, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import { ViewsModule } from './views/views.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,5 +52,10 @@ import { ViewsModule } from './views/views.module';
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
   ]
+  
 })
+
+
+
+
 export class AppModule { }

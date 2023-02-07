@@ -27,11 +27,11 @@ export class RegisterComponent implements OnInit {
     lastName: new FormControl(),
     birthdayDate: new FormControl(),
     phone: new FormControl(),
-    departamento: new FormControl(),
-    provincia: new FormControl(),
+    //departamento: new FormControl(),
+    //provincia: new FormControl(),
     residenceCity: new FormControl(),
     address: new FormControl(),
-    invitedCode: new FormControl(),
+    //invitedCode: new FormControl(),
     mail: new FormControl(),
     userName: new FormControl(),
     password: new FormControl(),
@@ -54,11 +54,11 @@ export class RegisterComponent implements OnInit {
       //secondLastName: [''],
       birthdayDate: [this.userInit ||''],
       phone: [this.userInit.phone ||''],
-      departamento: [this.userInit.departamento ||''],
-      provincia: [this.userInit.password ||''],
+      //departamento: [this.userInit.departamento ||''],
+      //provincia: [this.userInit.password ||''],
       residenceCity: [this.userInit.residenceCity ||''],
       address: [this.userInit.address ||''],
-      invitedCode: [this.userInit.invitedCode ||''],
+      //invitedCode: [this.userInit.invitedCode ||''],
       mail: [this.userInit.mail ||'', [Validators.required, Validators.email]],
       userName: [this.userInit.userName ||''],
       password: [this.userInit.password ||''],
@@ -81,13 +81,13 @@ export class RegisterComponent implements OnInit {
   get phone(): AbstractControl {
     return this.form.get("phone") as FormArray;
   }
-
+/** 
   get departamento(): AbstractControl {
     return this.form.get("departamento") as FormArray;
   }
   get provincia(): AbstractControl {
     return this.form.get("provincia") as FormArray;
-  }
+  }*/
   get residenceCity(): AbstractControl {
     return this.form.get("residenceCity") as FormArray;
   }
